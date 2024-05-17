@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-WarnerBros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            outline: none;
+            color: #fff;
+        }
+
+        body{
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-image: url(wall.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(30px);
+        }
+
+        .container{
+            width: 360px;
+            background-color: #000;
+            opacity: 0.6;
+        }
+
+        .container form{
+            width: 100%;
+            text-align: center;
+            padding: 25px 20px;
+        }
+        form h1{
+            padding: 10px 0;
+        }
+
+        form .id{
+            position: relative;
+        }
+
+        .id i{
+            position: absolute;
+            font-size: 20px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            padding-left: 45px;
+        }
+
+        form input{
+            width: 100%;
+            height: 50px;
+            margin: 4px;
+            border: 1px solid #5c5c5c;
+            border-radius: 10px;
+            background: #181717;
+            padding: 0 15px;
+            font-size: 20px;
+            padding-right: 45px;
+            color: #fff;
+        }
+
+        form select{
+            width: 100%;
+            height: 50px;
+            margin: 4px;
+            border: 1px solid #5c5c5c;
+            border-radius: 50px;
+            background: #181717;
+            padding: 0 15px;
+            font-size: 20px;
+            padding-right: 45px;
+        }
+
+        form textarea{
+            padding: 5px 15px;
+            border: 1px solid #5c5c5c;
+            border-radius: 10px;
+            background: #181717;
+            padding: 0 15px;
+            font-size: 20px;
+            width: 100%;
+            margin: 4px;
+            color: #fff;
+        }
+        
+        form button{
+            margin-top: 5px;
+            border: none;
+            background: #01ccff;
+            color:black;
+            padding: 10px 0;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            margin-right: 4px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        form input:focus,
+        form select:focus,
+        form textarea:focus{
+            border: 1px solid #00fff0;
+            color: #00fff0;
+            transition: all 0.3s ease;
+        }
+
+        form input:focus::placeholder,
+        form textarea:focus::placeholder{
+            color: #00fff0;
+            transition: all 0.3s ease;
+        }
+
+        form select:focus:first-child{
+            border: 1px solid #00fff0;
+            color: #00fff0;
+            transition: all 0.3s ease;
+        }
+
+        form input:focus + i,
+        form select:focus + i{
+            color: #00fff0;
+            transition: all 0.3s ease;
+        }
+
+        form a i{
+            margin-top: 10px;
+            color: #FFc200;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form>
+                <h1>Give your Feedback</h1>
+                <div class="id">
+                    <input type="text" class="fname" placeholder="Fullname">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="id">
+                    <input type="email" class="e-mail" placeholder="Email address">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="id">
+                    <select name="gender" id="gender">
+                        <option value="0">Select...</option>
+                        <option value="f">Female</option>
+                        <option value="m">Male</option>
+                    </select>
+                    <i class="fa-solid fa-venus-mars"></i>
+                </div>
+                <textarea cols="15" rows="6" placeholder="Enter your opinions here.."></textarea>
+                <button>Submit</button>
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
